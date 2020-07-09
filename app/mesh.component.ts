@@ -34,8 +34,7 @@ export class MeshComponent implements AfterViewInit {
     onMouseDownLat = 0;
     phi = 0;
     theta = 0;
-    path = 'https://img.techpowerup.org/200709/marker.png';
-    //path = 'https://dev.w3.org/SVG/tools/svgweb/samples/svg-files/AJ_Digital_Camera.svg'
+    path = 'assets/Marker.png';
     SVG_NS = "http://www.w3.org/2000/svg";
 // an object to define the properties and text content of the text element 
     txtObj = {
@@ -75,10 +74,10 @@ export class MeshComponent implements AfterViewInit {
         var geometry = new THREE.SphereBufferGeometry(500, 60, 40);
         // invert the geometry on the x-axis so that all of the faces point inward
         geometry.scale(-1, 1, 1);
-        console.log('img', this.imageUrl);
+       
         var material = new THREE.MeshBasicMaterial({
             map: new THREE.TextureLoader().load(
-               this.imageUrl
+              'assets/3dimage.jpg'
             )
         });
         mesh = new THREE.Mesh(geometry, material);
