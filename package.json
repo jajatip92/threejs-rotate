@@ -7,7 +7,7 @@
     "three": "0.91.0",
     "core-js": "2.5.1",
     "zone.js": "0.8.20",
-    "@angular/core": "5.2.8",
+    "@angular/core": "10.2.5",
     "@angular/forms": "5.2.8",
     "@angular/common": "5.2.8",
     "@angular/router": "5.2.8",
